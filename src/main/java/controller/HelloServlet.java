@@ -1,3 +1,11 @@
+/*
+ * 这个是Servlet, 并不是Controller
+ * 一般MVC中没有Servlet, 只有Controller。Controller是对同类Servlet的一个"整合"
+ * 一个Servlet是把一个url映射到一个类上
+ * 那么我们可能有 CreateDemoServlet DeleteDemoServlet UpdateDemoServlet GetDemoServlet 四个servlet类
+ * 这个就可以简化为一个Controller, 把一个url映射到一个方法上
+ * 那么上述四个Servlet就可以作为四个方法写进一个DemoController类里 
+ * */
 package controller;
 
 import java.io.IOException;
